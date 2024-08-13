@@ -14,7 +14,10 @@
       "dev.galiev.worldoflabyrinth.client.WorldOfLabyrinthClient"
     ],
     "main": [
-      "dev.galiev.worldoflabyrinth.WorldOfLabyrinth"
+      {
+        "adapter": "kotlin",
+        "value": "dev.galiev.worldoflabyrinth.WorldOfLabyrinth"
+      }
     ]
   },
   "mixins": [
