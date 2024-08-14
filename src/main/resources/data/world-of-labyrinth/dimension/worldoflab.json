@@ -20,7 +20,7 @@
           "height": 35
         }
       ],
-      "structure_overrides": "minecraft:strongholds"
+      "structure_overrides": "world-of-labyrinth:labyrinth"
     }
   }
 }
