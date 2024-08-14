@@ -7,7 +7,7 @@
   "biomes": "#world-of-labyrinth:has_structure/labyrinth_biomes",
   "step": "surface_structures",
   "start_height": {
-    "absolute": 2
+    "absolute": 0
   },
   "project_start_to_heightmap": "WORLD_SURFACE_WG",
   "liquid_settings": "apply_waterlogging",
