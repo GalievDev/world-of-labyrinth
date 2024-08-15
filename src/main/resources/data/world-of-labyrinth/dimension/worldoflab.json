@@ -3,7 +3,7 @@
   "generator": {
     "type": "minecraft:flat",
     "settings": {
-      "biome": "minecraft:plains",
+      "biome": "world-of-labyrinth:labyrinth_biome",
       "lakes": false,
       "features": false,
       "layers": [
