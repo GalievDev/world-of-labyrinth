@@ -1,6 +1,7 @@
-package dev.galiev.worldoflabyrinth.item
+package dev.galiev.worldoflabyrinth.registry
 
 import dev.galiev.worldoflabyrinth.WorldOfLabyrinth.MOD_ID
+import dev.galiev.worldoflabyrinth.item.Teleporter
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents
 import net.minecraft.item.Item
 import net.minecraft.item.ItemGroups
