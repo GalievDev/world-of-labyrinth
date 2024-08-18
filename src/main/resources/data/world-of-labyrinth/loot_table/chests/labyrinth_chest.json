@@ -2,85 +2,211 @@
   "type": "minecraft:chest",
   "pools": [
     {
-      "rolls": {
-        "min": 1,
-        "max": 15
-      },
-      "bonus_rolls": 1,
+      "bonus_rolls": 0.0,
       "entries": [
         {
           "type": "minecraft:item",
+          "name": "minecraft:saddle",
+          "weight": 20
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_apple",
+          "weight": 15
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:enchanted_golden_apple",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:enchant_randomly",
+              "options": "#minecraft:on_random_loot"
+            }
+          ],
+          "name": "minecraft:book",
+          "weight": 10
+        }
+      ],
+      "rolls": {
+        "type": "minecraft:uniform",
+        "max": 3.0,
+        "min": 1.0
+      }
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 4.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:iron_ingot",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 4.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:gold_ingot",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bread",
+          "weight": 20
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 4.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
           "name": "minecraft:vine",
-          "weight": 10,
-          "quality": 1
-        }
-      ]
-    },
-    {
-      "rolls": {
-        "min": 1,
-        "max": 15
-      },
-      "entries": [
+          "weight": 20
+        },
         {
           "type": "minecraft:item",
-          "name": "minecraft:moss_block",
-          "weight": 20,
-          "quality": 1
-        }
-      ]
-    },
-    {
-      "rolls": {
-        "min": 1,
-        "max": 5
-      },
-      "entries": [
+          "name": "minecraft:bucket",
+          "weight": 10
+        },
         {
           "type": "minecraft:item",
-          "name": "minecraft:iron_ingot"
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 4.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:coal",
+          "weight": 15
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 4.0,
+                "min": 2.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:beetroot_seeds",
+          "weight": 10
         }
       ],
-      "functions": [
-        {
-          "function": "minecraft:set_count",
-          "count": 2,
-          "add": true
-        }
-      ]
-    },
-    {
       "rolls": {
-        "min": 1,
-        "max": 3
-      },
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:diamond"
-        }
-      ],
-      "conditions": [
-        {
-          "condition": "minecraft:random_chance",
-          "chance": 0.2
-        }
-      ]
+        "type": "minecraft:uniform",
+        "max": 4.0,
+        "min": 1.0
+      }
     },
     {
-      "rolls": 3,
+      "bonus_rolls": 0.0,
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:emerald"
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 8.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:bone",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 8.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:gunpowder",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 8.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:rotten_flesh",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 8.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:string",
+          "weight": 10
         }
       ],
-      "conditions": [
-        {
-          "condition": "minecraft:random_chance",
-          "chance": 0.3
-        }
-      ]
+      "rolls": 3.0
     }
-  ]
+  ],
+  "random_sequence": "minecraft:chests/simple_dungeon"
 }
