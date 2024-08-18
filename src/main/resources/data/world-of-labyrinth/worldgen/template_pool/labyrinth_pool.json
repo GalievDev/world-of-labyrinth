@@ -21,9 +21,18 @@
       }
     },
     {
-      "weight": 30,
+      "weight": 10,
       "element": {
         "location": "world-of-labyrinth:crossroads/labyrinth_crossroad_1",
+        "processors": "world-of-labyrinth:randomize_blocks",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 30,
+      "element": {
+        "location": "world-of-labyrinth:crossroads/labyrinth_crossroad_2",
         "processors": "world-of-labyrinth:randomize_blocks",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
@@ -39,9 +48,18 @@
       }
     },
     {
-      "weight": 40,
+      "weight": 10,
       "element": {
         "location": "world-of-labyrinth:crossroads/crossroad_left_1",
+        "processors": "world-of-labyrinth:randomize_blocks",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 40,
+      "element": {
+        "location": "world-of-labyrinth:crossroads/crossroad_left_2",
         "processors": "world-of-labyrinth:randomize_blocks",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
