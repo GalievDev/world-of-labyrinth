@@ -5,7 +5,7 @@
       "weight": 5,
       "element": {
         "location": "world-of-labyrinth:crossroads/labyrinth_crossroad_1",
-        "processors": "minecraft:empty",
+        "processors": "world-of-labyrinth:randomize_blocks",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
       }

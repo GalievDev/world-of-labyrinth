@@ -3,7 +3,7 @@
 
   "elements": [
     {
-      "weight": 100,
+      "weight": 50,
       "element": {
         "location": "world-of-labyrinth:roads/labyrinth_road_1",
         "processors": "world-of-labyrinth:randomize_blocks",
@@ -12,7 +12,7 @@
       }
     },
     {
-      "weight": 20,
+      "weight": 50,
       "element": {
         "location": "world-of-labyrinth:others/stairs_up",
         "processors": "world-of-labyrinth:randomize_blocks",
@@ -21,7 +21,7 @@
       }
     },
     {
-      "weight": 100,
+      "weight": 50,
       "element": {
         "location": "world-of-labyrinth:crossroads/crossroad_right_1",
         "processors": "world-of-labyrinth:randomize_blocks",
@@ -30,7 +30,7 @@
       }
     },
     {
-      "weight": 100,
+      "weight": 50,
       "element": {
         "location": "world-of-labyrinth:crossroads/crossroad_left_1",
         "processors": "world-of-labyrinth:randomize_blocks",
@@ -39,9 +39,36 @@
       }
     },
     {
-      "weight": 1,
+      "weight": 50,
       "element": {
         "location": "world-of-labyrinth:traps/trap_room_1",
+        "processors": "world-of-labyrinth:randomize_blocks",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 50,
+      "element": {
+        "location": "world-of-labyrinth:traps/trap_room_2",
+        "processors": "world-of-labyrinth:randomize_blocks",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 50,
+      "element": {
+        "location": "world-of-labyrinth:traps/trap_1",
+        "processors": "world-of-labyrinth:randomize_blocks",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 50,
+      "element": {
+        "location": "world-of-labyrinth:traps/trap_2",
         "processors": "world-of-labyrinth:randomize_blocks",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
