@@ -27,8 +27,9 @@ object DoorOpenEvent: UseBlockCallback {
             }
             val block = world.getBlockState(hitResult?.blockPos)?.block
             if (block == Blocks.SPRUCE_DOOR) {
-                player.addStatusEffect(StatusEffectInstance(StatusEffects.BLINDNESS, 200, 3))
-                player.addStatusEffect(StatusEffectInstance(StatusEffects.SLOWNESS, 200, 3))
+                player.addStatusEffect(StatusEffectInstance(StatusEffects.BLINDNESS, 300, 3))
+                player.addStatusEffect(StatusEffectInstance(StatusEffects.SLOWNESS, 300, 3))
+                player.addStatusEffect(StatusEffectInstance(StatusEffects.WEAKNESS, 300, 3))
                 player.sendMessage(Text.literal("HAHAHA did you seriously think it was that easy?").formatted(Formatting.RED), true)
                 val zombie = EntityType.ZOMBIE.create(world)
                 zombie?.equipStack(EquipmentSlot.HEAD, Items.DIAMOND_HELMET.defaultStack)
