@@ -4,7 +4,7 @@
     {
       "weight": 30,
       "element": {
-        "location": "world-of-labyrinth:crossroads/labyrinth_crossroad_1",
+        "location": "world-of-labyrinth:roads/labyrinth_crossroad_1",
         "processors": "world-of-labyrinth:randomize_blocks",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"

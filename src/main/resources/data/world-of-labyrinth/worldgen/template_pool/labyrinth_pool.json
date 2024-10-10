@@ -30,7 +30,7 @@
       }
     },
     {
-      "weight": 10,
+      "weight": 1,
       "element": {
         "location": "world-of-labyrinth:traps/trap_room_1",
         "processors": "world-of-labyrinth:randomize_blocks",
@@ -39,9 +39,18 @@
       }
     },
     {
-      "weight": 10,
+      "weight": 1,
       "element": {
         "location": "world-of-labyrinth:traps/trap_room_2",
+        "processors": "world-of-labyrinth:randomize_blocks",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "world-of-labyrinth:others/labyrinth_chest_1",
         "processors": "world-of-labyrinth:randomize_blocks",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
