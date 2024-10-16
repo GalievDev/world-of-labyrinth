@@ -1,5 +1,6 @@
 package dev.galiev.worldoflabyrinth.event
 
+import dev.galiev.worldoflabyrinth.world.dimension.DimensionRegistry
 import net.fabricmc.fabric.api.event.player.AttackBlockCallback
 import net.minecraft.entity.player.PlayerEntity
 import net.minecraft.util.ActionResult
@@ -16,7 +17,7 @@ object BlockBreakingEvent: AttackBlockCallback {
         pos: BlockPos?,
         direction: Direction?
     ): ActionResult {
-        if(player?.isCreative!!) {
+        if(player?.isCreative!! && world?.registryKey == DimensionRegistry.WOL_LEVEL_KEY) {
             return ActionResult.PASS
         }
         return ActionResult.FAIL
