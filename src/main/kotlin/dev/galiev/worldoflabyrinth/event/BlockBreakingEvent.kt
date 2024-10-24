@@ -17,9 +17,9 @@ object BlockBreakingEvent: AttackBlockCallback {
         pos: BlockPos?,
         direction: Direction?
     ): ActionResult {
-        if(player?.isCreative!! && world?.registryKey == DimensionRegistry.WOL_LEVEL_KEY) {
-            return ActionResult.PASS
+        if(!player?.isCreative!! && world?.registryKey == DimensionRegistry.WOL_LEVEL_KEY) {
+            return ActionResult.FAIL
         }
-        return ActionResult.FAIL
+        return ActionResult.PASS
     }
 }
