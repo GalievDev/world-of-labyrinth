@@ -1,9 +1,8 @@
 {
   "fallback": "minecraft:empty",
-
   "elements": [
     {
-      "weight": 30,
+      "weight": 5,
       "element": {
         "location": "world-of-labyrinth:roads/labyrinth_road_1",
         "processors": "world-of-labyrinth:randomize_blocks",
@@ -12,7 +11,7 @@
       }
     },
     {
-      "weight": 30,
+      "weight": 5,
       "element": {
         "location": "world-of-labyrinth:roads/crossroad_left_1",
         "processors": "world-of-labyrinth:randomize_blocks",
@@ -21,7 +20,7 @@
       }
     },
     {
-      "weight": 30,
+      "weight": 5,
       "element": {
         "location": "world-of-labyrinth:roads/crossroad_right_1",
         "processors": "world-of-labyrinth:randomize_blocks",
@@ -30,7 +29,7 @@
       }
     },
     {
-      "weight": 1,
+      "weight": 3,
       "element": {
         "location": "world-of-labyrinth:traps/trap_room_1",
         "processors": "world-of-labyrinth:randomize_blocks",
@@ -39,7 +38,7 @@
       }
     },
     {
-      "weight": 1,
+      "weight": 3,
       "element": {
         "location": "world-of-labyrinth:traps/trap_room_2",
         "processors": "world-of-labyrinth:randomize_blocks",
