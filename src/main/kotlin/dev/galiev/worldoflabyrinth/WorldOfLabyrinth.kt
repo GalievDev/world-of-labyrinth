@@ -2,9 +2,7 @@ package dev.galiev.worldoflabyrinth
 
 import dev.galiev.worldoflabyrinth.event.BlockBreakingEvent
 import dev.galiev.worldoflabyrinth.event.DoorOpenEvent
-import dev.galiev.worldoflabyrinth.registry.BlockEntityRegistry
-import dev.galiev.worldoflabyrinth.registry.BlockRegistry
-import dev.galiev.worldoflabyrinth.registry.ItemRegistry
+import dev.galiev.worldoflabyrinth.registry.*
 import net.fabricmc.api.ModInitializer
 import net.fabricmc.fabric.api.event.player.AttackBlockCallback
 import net.fabricmc.fabric.api.event.player.UseBlockCallback
@@ -20,5 +18,7 @@ object WorldOfLabyrinth : ModInitializer {
         ItemRegistry
         BlockRegistry
         BlockEntityRegistry
+        BiomeRegistry
+        StructureRegistry
     }
 }

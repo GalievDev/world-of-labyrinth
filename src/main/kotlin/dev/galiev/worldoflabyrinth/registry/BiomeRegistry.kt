@@ -1,4 +1,4 @@
-package dev.galiev.worldoflabyrinth.world.biome
+package dev.galiev.worldoflabyrinth.registry
 
 import dev.galiev.worldoflabyrinth.WorldOfLabyrinth.MOD_ID
 import net.minecraft.registry.RegistryKey
