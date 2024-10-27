@@ -3,7 +3,6 @@ package dev.galiev.worldoflabyrinth.event
 import dev.galiev.worldoflabyrinth.world.dimension.DimensionRegistry
 import net.fabricmc.fabric.api.event.player.UseBlockCallback
 import net.minecraft.block.Blocks
-import net.minecraft.block.ChestBlock
 import net.minecraft.entity.EntityType
 import net.minecraft.entity.EquipmentSlot
 import net.minecraft.entity.effect.StatusEffectInstance
@@ -42,10 +41,7 @@ object DoorOpenEvent: UseBlockCallback {
                 world.spawnEntity(zombie)
 
                 return ActionResult.FAIL
-            } else if (block is ChestBlock) {
-                return ActionResult.PASS
             }
-            return ActionResult.FAIL
         }
         return ActionResult.PASS
     }
