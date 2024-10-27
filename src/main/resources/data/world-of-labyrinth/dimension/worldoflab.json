@@ -8,16 +8,8 @@
       "features": false,
       "layers": [
         {
-          "block": "minecraft:bedrock",
-          "height": 1
-        },
-        {
-          "block": "minecraft:deepslate",
-          "height": 30
-        },
-        {
-          "block": "minecraft:stone",
-          "height": 35
+          "block": "minecraft:air",
+          "height": 100
         }
       ],
       "structure_overrides": "world-of-labyrinth:labyrinth"

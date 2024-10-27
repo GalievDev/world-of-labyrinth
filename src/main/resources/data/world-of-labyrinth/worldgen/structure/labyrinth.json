@@ -1,13 +1,13 @@
 {
-  "type": "minecraft:jigsaw",
+  "type": "world-of-labyrinth:sky",
   "start_pool": "world-of-labyrinth:labyrinth_start_pool",
   "use_expansion_hack": false,
-  "size": 4,
+  "size": 2,
   "max_distance_from_center": 128,
   "biomes": "#world-of-labyrinth:has_structure/labyrinth_biomes",
   "step": "surface_structures",
   "start_height": {
-    "absolute": 1
+    "absolute": 80
   },
   "project_start_to_heightmap": "WORLD_SURFACE_WG",
   "liquid_settings": "apply_waterlogging",
