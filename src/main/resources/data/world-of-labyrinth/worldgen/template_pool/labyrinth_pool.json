@@ -29,9 +29,18 @@
       }
     },
     {
-      "weight": 100,
+      "weight": 20,
       "element": {
         "location": "world-of-labyrinth:others/labyrinth_chest_1",
+        "processors": "world-of-labyrinth:randomize_blocks",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 5,
+      "element": {
+        "location": "world-of-labyrinth:others/labyrinth_trapped_chest",
         "processors": "world-of-labyrinth:randomize_blocks",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
