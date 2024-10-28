@@ -1,6 +1,6 @@
 package dev.galiev.worldoflabyrinth.event
 
-import dev.galiev.worldoflabyrinth.world.dimension.DimensionRegistry
+import dev.galiev.worldoflabyrinth.registry.DimensionRegistry
 import net.fabricmc.fabric.api.event.player.UseBlockCallback
 import net.minecraft.block.Blocks
 import net.minecraft.entity.EntityType
