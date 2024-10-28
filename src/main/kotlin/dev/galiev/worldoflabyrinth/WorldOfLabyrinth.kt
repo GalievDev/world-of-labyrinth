@@ -1,11 +1,9 @@
 package dev.galiev.worldoflabyrinth
 
-import dev.galiev.worldoflabyrinth.event.BlockBreakingEvent
-import dev.galiev.worldoflabyrinth.event.BlockPlacingEvent
-import dev.galiev.worldoflabyrinth.event.DoorOpenEvent
-import dev.galiev.worldoflabyrinth.event.TrappedChestOpenEvent
+import dev.galiev.worldoflabyrinth.event.*
 import dev.galiev.worldoflabyrinth.registry.*
 import net.fabricmc.api.ModInitializer
+import net.fabricmc.fabric.api.entity.event.v1.EntityElytraEvents
 import net.fabricmc.fabric.api.event.player.AttackBlockCallback
 import net.fabricmc.fabric.api.event.player.UseBlockCallback
 import org.apache.logging.log4j.LogManager
@@ -21,6 +19,7 @@ object WorldOfLabyrinth : ModInitializer {
         UseBlockCallback.EVENT.register(BlockPlacingEvent)
         UseBlockCallback.EVENT.register(DoorOpenEvent)
         UseBlockCallback.EVENT.register(TrappedChestOpenEvent)
+        EntityElytraEvents.ALLOW.register(ElytraEvent)
         ItemRegistry
         BlockRegistry
         BlockEntityRegistry
