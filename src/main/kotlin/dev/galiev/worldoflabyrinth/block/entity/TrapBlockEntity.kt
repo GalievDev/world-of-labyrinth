@@ -71,7 +71,7 @@ class TrapBlockEntity(pos: BlockPos?, state: BlockState?)
         }
 
         private fun handleVoidTrap(world: World, blockPos: BlockPos, player: PlayerEntity) {
-            val targetArea = BlockPos.iterate(blockPos.add(-2, -1, -2), blockPos.add(2, 2, 2))
+            val targetArea = BlockPos.iterate(blockPos.add(-3, -1, -3), blockPos.add(3, 2, 3))
             if (player.blockPos in targetArea) {
                 BlockPos.iterate(blockPos.add(-1, 0, -1), blockPos.add(1, 0, 1)).forEach {
                     world.breakBlock(it, false)
