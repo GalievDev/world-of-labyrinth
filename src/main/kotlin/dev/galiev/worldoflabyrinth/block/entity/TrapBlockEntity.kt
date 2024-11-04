@@ -3,6 +3,7 @@ package dev.galiev.worldoflabyrinth.block.entity
 import dev.galiev.worldoflabyrinth.block.TrapBlock
 import dev.galiev.worldoflabyrinth.registry.BlockEntityRegistry
 import dev.galiev.worldoflabyrinth.registry.DimensionRegistry
+import net.minecraft.block.BarrelBlock
 import net.minecraft.block.BlockState
 import net.minecraft.block.Blocks
 import net.minecraft.block.ChestBlock
@@ -42,12 +43,12 @@ class TrapBlockEntity(pos: BlockPos?, state: BlockState?)
         }
 
         private fun handleMobsTrap(world: World, blockPos: BlockPos, player: PlayerEntity) {
-            val targetArea = BlockPos.iterate(blockPos.add(-7, 0, -7), blockPos.add(7, 2, 7))
+            val targetArea = BlockPos.iterate(blockPos.add(-7, 0, -7), blockPos.add(7, 3, 7))
             if (player.blockPos in targetArea) {
                 mobs(player, world, blockPos)
                 targetArea.forEach {
                     if(world.getBlockState(it).isIn(BlockTags.BEACON_BASE_BLOCKS)
-                        || world.getBlockState(it).block is ChestBlock) {
+                        || world.getBlockState(it).block is ChestBlock || world.getBlockState(it).block is BarrelBlock) {
                         world.breakBlock(it, false)
                     }
                 }
