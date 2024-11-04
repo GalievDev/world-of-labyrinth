@@ -2,7 +2,7 @@
   "fallback": "minecraft:empty",
   "elements": [
     {
-      "weight": 1,
+      "weight": 2,
       "element": {
         "location": "world-of-labyrinth:traps/trap_room_1",
         "processors": "world-of-labyrinth:randomize_blocks",
@@ -11,9 +11,18 @@
       }
     },
     {
-      "weight": 1,
+      "weight": 5,
       "element": {
         "location": "world-of-labyrinth:traps/trap_room_2",
+        "processors": "world-of-labyrinth:randomize_blocks",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "world-of-labyrinth:traps/trap_room_3",
         "processors": "world-of-labyrinth:randomize_blocks",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"

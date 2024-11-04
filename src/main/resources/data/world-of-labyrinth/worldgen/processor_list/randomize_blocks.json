@@ -40,7 +40,7 @@
             "predicate_type": "minecraft:always_true"
           },
           "output_state": {
-            "Name": "minecraft:coarse_dirt"
+            "Name": "minecraft:rooted_dirt"
           }
         },
         {
@@ -67,6 +67,32 @@
           },
           "output_state": {
             "Name": "minecraft:cobweb"
+          }
+        },
+        {
+          "input_predicate": {
+            "block": "minecraft:coarse_dirt",
+            "probability": 0.02,
+            "predicate_type": "minecraft:random_block_match"
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "output_state": {
+            "Name": "world-of-labyrinth:void_trap"
+          }
+        },
+        {
+          "input_predicate": {
+            "block": "minecraft:coarse_dirt",
+            "probability": 0.01,
+            "predicate_type": "minecraft:random_block_match"
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "output_state": {
+            "Name": "world-of-labyrinth:lava_trap"
           }
         }
       ]
