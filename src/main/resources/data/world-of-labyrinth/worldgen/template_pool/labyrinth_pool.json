@@ -11,7 +11,7 @@
       }
     },
     {
-      "weight": 5,
+      "weight": 2,
       "element": {
         "location": "world-of-labyrinth:roads/crossroad_left_1",
         "processors": "world-of-labyrinth:randomize_blocks",
@@ -22,7 +22,52 @@
     {
       "weight": 5,
       "element": {
+        "location": "world-of-labyrinth:roads/crossroad_left_2",
+        "processors": "world-of-labyrinth:randomize_blocks",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 5,
+      "element": {
+        "location": "world-of-labyrinth:roads/crossroad_left_3",
+        "processors": "world-of-labyrinth:randomize_blocks",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
         "location": "world-of-labyrinth:roads/crossroad_right_1",
+        "processors": "world-of-labyrinth:randomize_blocks",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 5,
+      "element": {
+        "location": "world-of-labyrinth:roads/crossroad_right_2",
+        "processors": "world-of-labyrinth:randomize_blocks",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 5,
+      "element": {
+        "location": "world-of-labyrinth:roads/crossroad_right_3",
+        "processors": "world-of-labyrinth:randomize_blocks",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 1,
+      "element": {
+        "location": "world-of-labyrinth:roads/crossroad_right_4",
         "processors": "world-of-labyrinth:randomize_blocks",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
@@ -41,6 +86,24 @@
       "weight": 5,
       "element": {
         "location": "world-of-labyrinth:others/labyrinth_trapped_chest",
+        "processors": "world-of-labyrinth:randomize_blocks",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 2,
+      "element": {
+        "location": "world-of-labyrinth:zones/chill_zone_1",
+        "processors": "world-of-labyrinth:randomize_blocks",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    },
+    {
+      "weight": 5,
+      "element": {
+        "location": "world-of-labyrinth:zones/chill_zone_2",
         "processors": "world-of-labyrinth:randomize_blocks",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
