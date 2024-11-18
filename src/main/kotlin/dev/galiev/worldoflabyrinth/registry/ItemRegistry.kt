@@ -1,7 +1,7 @@
 package dev.galiev.worldoflabyrinth.registry
 
 import dev.galiev.worldoflabyrinth.WorldOfLabyrinth.MOD_ID
-import dev.galiev.worldoflabyrinth.item.Teleporter
+import dev.galiev.worldoflabyrinth.item.LabyrinthOrb
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents
 import net.minecraft.item.Item
 import net.minecraft.item.ItemGroups
@@ -12,7 +12,7 @@ import net.minecraft.util.Identifier
 object ItemRegistry {
     private val ITEMS: MutableMap<Item, Identifier> = LinkedHashMap()
 
-    val TELEPORTER = Teleporter().create("teleporter")
+    val LABYRINTH_ORB = LabyrinthOrb().create("labyrinth_orb")
 
     init {
         ITEMS.keys.forEach { item ->
