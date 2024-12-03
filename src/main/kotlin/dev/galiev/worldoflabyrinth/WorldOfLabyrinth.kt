@@ -25,5 +25,6 @@ object WorldOfLabyrinth : ModInitializer {
         BlockEntityRegistry
         BiomeRegistry
         StructureRegistry
+        //StructureTags
     }
 }
