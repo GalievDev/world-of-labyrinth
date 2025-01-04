@@ -2,7 +2,7 @@
   "type": "world-of-labyrinth:sky",
   "start_pool": "world-of-labyrinth:labyrinth_start_pool",
   "use_expansion_hack": false,
-  "size": 2,
+  "size": 3,
   "max_distance_from_center": 128,
   "biomes": "#world-of-labyrinth:has_structure/labyrinth_biomes",
   "step": "surface_structures",
