@@ -6,8 +6,16 @@ import net.fabricmc.api.ModInitializer
 import net.fabricmc.fabric.api.entity.event.v1.EntityElytraEvents
 import net.fabricmc.fabric.api.event.player.AttackBlockCallback
 import net.fabricmc.fabric.api.event.player.UseBlockCallback
+import net.fabricmc.fabric.api.`object`.builder.v1.trade.TradeOfferHelper
+import net.minecraft.item.ItemStack
+import net.minecraft.item.Items
+import net.minecraft.village.TradeOffer
+import net.minecraft.village.TradeOffers
+import net.minecraft.village.TradedItem
+import net.minecraft.village.VillagerProfession
 import org.apache.logging.log4j.LogManager
-import kotlin.random.Random
+import java.util.*
+
 
 object WorldOfLabyrinth : ModInitializer {
     const val MOD_ID = "world-of-labyrinth"
@@ -26,5 +34,17 @@ object WorldOfLabyrinth : ModInitializer {
         BiomeRegistry
         StructureRegistry
         //StructureTags
+        TradeOfferHelper.registerVillagerOffers(
+            VillagerProfession.CARTOGRAPHER, 3
+        ) { factories ->
+            factories.add(TradeOffers.Factory { entity, random ->
+                TradeOffer(
+                    TradedItem(Items.CLOCK, 1),
+                    Optional.of(TradedItem(Items.COMPASS, 1)),
+                    ItemStack(ItemRegistry.PENDULUM, 1),
+                    1, 5, 0.05f
+                )
+            })
+        }
     }
 }
