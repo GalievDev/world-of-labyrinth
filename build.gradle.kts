@@ -27,8 +27,6 @@ java {
 }
 
 loom {
-    splitEnvironmentSourceSets()
-
     mods {
         register("world-of-labyrinth") {
             sourceSet("main")
