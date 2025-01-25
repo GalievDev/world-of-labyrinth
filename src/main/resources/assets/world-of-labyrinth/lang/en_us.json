@@ -3,5 +3,6 @@
   "block.world-of-labyrinth.mob_trap": "Mob Trap Block",
   "block.world-of-labyrinth.lava_trap": "Lava Trap Block",
   "block.world-of-labyrinth.void_trap": "Void Trap Block",
-  "itemTooltip.world-of-labyrinth.labyrinth_orb": "Press RMB to go to the labyrinth if you get stuck, press RMB again"
+  "itemTooltip.world-of-labyrinth.labyrinth_orb": "Press RMB to go to the labyrinth if you get stuck, press RMB again",
+  "itemTooltip.world-of-labyrinth.nether_labyrinth_orb": "Coming soon..."
 }

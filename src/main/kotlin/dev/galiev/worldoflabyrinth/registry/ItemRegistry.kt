@@ -2,6 +2,7 @@ package dev.galiev.worldoflabyrinth.registry
 
 import dev.galiev.worldoflabyrinth.WorldOfLabyrinth.MOD_ID
 import dev.galiev.worldoflabyrinth.item.LabyrinthOrb
+import dev.galiev.worldoflabyrinth.item.NetherLabyrinthOrb
 import dev.galiev.worldoflabyrinth.item.Pendulum
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents
 import net.minecraft.item.Item
@@ -14,6 +15,7 @@ object ItemRegistry {
     private val ITEMS: MutableMap<Item, Identifier> = LinkedHashMap()
 
     val LABYRINTH_ORB = LabyrinthOrb().create("labyrinth_orb")
+    val NETHER_LABYRINTH_ORB = NetherLabyrinthOrb().create("nether_labyrinth_orb")
     val PENDULUM = Pendulum().create("pendulum")
 
     init {
