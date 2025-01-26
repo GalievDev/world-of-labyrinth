@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "world-of-labyrinth:item/guide_stone"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "world-of-labyrinth:active": 1
+      },
+      "model": "world-of-labyrinth:item/guide_stone_active"
+    }
+  ]
+}

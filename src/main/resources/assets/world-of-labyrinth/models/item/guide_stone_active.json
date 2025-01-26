@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "world-of-labyrinth:item/guide_stone_active"
+  }
+}

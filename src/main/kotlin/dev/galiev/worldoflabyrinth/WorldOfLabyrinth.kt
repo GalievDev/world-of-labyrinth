@@ -1,5 +1,6 @@
 package dev.galiev.worldoflabyrinth
 
+import dev.galiev.worldoflabyrinth.component.DataComponentType
 import dev.galiev.worldoflabyrinth.event.*
 import dev.galiev.worldoflabyrinth.registry.*
 import net.fabricmc.api.ModInitializer
@@ -34,6 +35,7 @@ object WorldOfLabyrinth : ModInitializer {
         BiomeRegistry
         StructureRegistry
         //StructureTags
+        DataComponentType
         TradeOfferHelper.registerVillagerOffers(
             VillagerProfession.CARTOGRAPHER, 3
         ) { factories ->
@@ -41,7 +43,7 @@ object WorldOfLabyrinth : ModInitializer {
                 TradeOffer(
                     TradedItem(Items.CLOCK, 1),
                     Optional.of(TradedItem(Items.COMPASS, 1)),
-                    ItemStack(ItemRegistry.PENDULUM, 1),
+                    ItemStack(ItemRegistry.GUIDE_STONE, 1),
                     1, 5, 0.05f
                 )
             })
