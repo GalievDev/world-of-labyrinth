@@ -1,9 +1,9 @@
 package dev.galiev.worldoflabyrinth.registry
 
 import dev.galiev.worldoflabyrinth.WorldOfLabyrinth.MOD_ID
+import dev.galiev.worldoflabyrinth.item.GuideStone
 import dev.galiev.worldoflabyrinth.item.LabyrinthOrb
 import dev.galiev.worldoflabyrinth.item.NetherLabyrinthOrb
-import dev.galiev.worldoflabyrinth.item.Pendulum
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents
 import net.minecraft.item.Item
 import net.minecraft.item.ItemGroups
@@ -16,7 +16,7 @@ object ItemRegistry {
 
     val LABYRINTH_ORB = LabyrinthOrb().create("labyrinth_orb")
     val NETHER_LABYRINTH_ORB = NetherLabyrinthOrb().create("nether_labyrinth_orb")
-    val PENDULUM = Pendulum().create("pendulum")
+    val GUIDE_STONE = GuideStone().create("guide_stone")
 
     init {
         ITEMS.keys.forEach { item ->
