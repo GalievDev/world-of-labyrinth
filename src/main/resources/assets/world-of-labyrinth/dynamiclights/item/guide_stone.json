@@ -1,0 +1,10 @@
+{
+  "match": {
+    "items": "world-of-labyrinth:guide_stone",
+    "components": {
+      "world-of-labyrinth:activated": true
+    }
+  },
+  "luminance": 7,
+  "water_sensitive": false
+}
