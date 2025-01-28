@@ -3,6 +3,7 @@ package dev.galiev.worldoflabyrinth.item
 import dev.galiev.worldoflabyrinth.WorldOfLabyrinth.RANDOM
 import dev.galiev.worldoflabyrinth.client.render.LabyrinthOrbRenderer
 import dev.galiev.worldoflabyrinth.registry.DimensionRegistry
+import net.minecraft.client.gui.screen.Screen
 import net.minecraft.entity.player.PlayerEntity
 import net.minecraft.item.Item
 import net.minecraft.item.ItemStack
@@ -49,7 +50,17 @@ class LabyrinthOrb : Item(Settings().maxCount(1)), GeoItem {
         tooltip: MutableList<Text>?,
         type: TooltipType?
     ) {
-        tooltip?.add(Text.translatable("itemTooltip.world-of-labyrinth.labyrinth_orb").formatted(Formatting.LIGHT_PURPLE))
+        if(Screen.hasShiftDown()) {
+            tooltip?.add(
+                Text.translatable("itemTooltip.world-of-labyrinth.labyrinth_orb")
+                    .formatted(Formatting.LIGHT_PURPLE)
+            )
+        } else {
+            tooltip?.add(
+                Text.translatable("itemTooltip.world-of-labyrinth.shiftDown")
+                    .formatted(Formatting.YELLOW)
+            )
+        }
         super.appendTooltip(stack, context, tooltip, type)
     }
 
