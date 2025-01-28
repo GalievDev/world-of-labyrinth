@@ -1,5 +1,5 @@
 {
-  "type": "world-of-labyrinth:sky",
+  "type": "minecraft:jigsaw",
   "start_pool": "world-of-labyrinth:labyrinth_start_pool",
   "use_expansion_hack": false,
   "size": 3,
