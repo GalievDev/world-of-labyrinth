@@ -2,10 +2,7 @@ package dev.galiev.worldoflabyrinth
 
 import dev.galiev.worldoflabyrinth.component.DataComponentType
 import dev.galiev.worldoflabyrinth.event.*
-import dev.galiev.worldoflabyrinth.registry.BiomeRegistry
-import dev.galiev.worldoflabyrinth.registry.BlockEntityRegistry
-import dev.galiev.worldoflabyrinth.registry.BlockRegistry
-import dev.galiev.worldoflabyrinth.registry.ItemRegistry
+import dev.galiev.worldoflabyrinth.registry.*
 import net.fabricmc.api.ModInitializer
 import net.fabricmc.fabric.api.entity.event.v1.EntityElytraEvents
 import net.fabricmc.fabric.api.event.player.AttackBlockCallback
@@ -36,8 +33,8 @@ object WorldOfLabyrinth : ModInitializer {
         BlockRegistry
         BlockEntityRegistry
         BiomeRegistry
-        //StructureTags
         DataComponentType
+        StructureTypeRegistry
         TradeOfferHelper.registerVillagerOffers(
             VillagerProfession.CARTOGRAPHER, 3
         ) { factories ->

@@ -1,0 +1,16 @@
+{
+  "structures": [
+    {
+      "structure": "world-of-labyrinth:exit_door",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:concentric_rings",
+    "count": 128,
+    "distance": 32,
+    "preferred_biomes": "#world-of-labyrinth:has_structure/labyrinth_biomes",
+    "salt": 1667402028,
+    "spread": 3
+  }
+}

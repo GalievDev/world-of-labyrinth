@@ -9,10 +9,13 @@
       "layers": [
         {
           "block": "minecraft:air",
-          "height": 100
+          "height": 80
         }
       ],
-      "structure_overrides": "world-of-labyrinth:labyrinth"
+      "structure_overrides": [
+        "world-of-labyrinth:labyrinth",
+        "world-of-labyrinth:exit_door"
+      ]
     }
   }
 }

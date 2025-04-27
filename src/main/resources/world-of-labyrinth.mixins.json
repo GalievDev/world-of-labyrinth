@@ -4,6 +4,8 @@
   "package": "dev.galiev.worldoflabyrinth.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
+    "JigsawJunctionAccessor",
+    "PoolStructurePieceAccessor"
   ],
   "injectors": {
     "defaultRequire": 1

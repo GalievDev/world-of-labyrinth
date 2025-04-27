@@ -7,5 +7,5 @@ import net.minecraft.util.Identifier
 import net.minecraft.world.gen.structure.Structure
 
 object StructureTags {
-    val PENDULUM_LOCATED: TagKey<Structure> = TagKey.of(RegistryKeys.STRUCTURE, Identifier.of(MOD_ID, "pendulum_located"))
+    val EXIT_LOCATED: TagKey<Structure> = TagKey.of(RegistryKeys.STRUCTURE, Identifier.of(MOD_ID, "exit_located"))
 }

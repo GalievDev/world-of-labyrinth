@@ -1,12 +1,12 @@
 package dev.galiev.worldoflabyrinth.item
 
 import dev.galiev.worldoflabyrinth.component.DataComponentType
+import dev.galiev.worldoflabyrinth.registry.StructureTags
 import net.minecraft.entity.Entity
 import net.minecraft.entity.player.PlayerEntity
 import net.minecraft.item.Item
 import net.minecraft.item.ItemStack
 import net.minecraft.particle.ParticleTypes
-import net.minecraft.registry.tag.StructureTags
 import net.minecraft.server.world.ServerWorld
 import net.minecraft.sound.SoundCategory
 import net.minecraft.sound.SoundEvents
@@ -25,7 +25,7 @@ class GuideStone : Item(Settings().maxCount(1)) {
         user.itemCooldownManager.set(this, 240)
 
         if (world is ServerWorld) {
-            val structurePos = world.locateStructure(StructureTags.EYE_OF_ENDER_LOCATED, user.blockPos, 100, false)!!
+            val structurePos = world.locateStructure(StructureTags.EXIT_LOCATED, user.blockPos, 100, false)!!
             val direction = Vec3d(
                 (structurePos.x + 0.5) - user.x,
                 (structurePos.y + 0.5) - user.y,
