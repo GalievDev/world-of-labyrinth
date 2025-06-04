@@ -50,8 +50,7 @@ class LabyrinthJigsawStructure(
 
     override fun getStructurePosition(context: Context): Optional<StructurePosition> {
         val offsetY = startHeight.get(context.random, HeightContext(context.chunkGenerator, context.world))
-        val blockPos = BlockPos(context.chunkPos.endX, offsetY, context.chunkPos.endZ)
-        logger.info("Starting pos $blockPos")
+        val blockPos = BlockPos(context.chunkPos.startX, offsetY, context.chunkPos.startZ)
         return StructureGenerationManager.generateLabyrinth(
             context,
             startPool,

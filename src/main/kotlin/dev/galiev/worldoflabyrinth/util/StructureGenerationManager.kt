@@ -59,7 +59,6 @@ object StructureGenerationManager {
         val random = context.random()
         val poolRegistry = registryManager.get(RegistryKeys.TEMPLATE_POOL)
         val rotation = BlockRotation.random(random)
-        logger.info("Rotation of structure: $rotation")
         val pool = startPool.key
             .flatMap { key: RegistryKey<StructurePool>? ->
                 poolRegistry.getOrEmpty(
@@ -100,9 +99,7 @@ object StructureGenerationManager {
                 element.getBoundingBox(templateManager, adjustedStartPos, rotation),
                 liquidSettings
             )
-            logger.info("Adjusted starting pos: $adjustedStartPos")
             val boundingBox = startPiece.boundingBox
-            logger.info("Bounding box: $boundingBox")
             val centerX = (boundingBox.maxX + boundingBox.minX) / 2
             val centerZ = (boundingBox.maxZ + boundingBox.minZ) / 2
             val startY = if (heightmapType.isPresent) {
@@ -140,13 +137,11 @@ object StructureGenerationManager {
                             ),
                             (centerZ + maxDistance + 1).toDouble()
                         )
-                        logger.info("Found box: $searchBox")
                         val voxelShape = VoxelShapes.combineAndSimplify(
                             VoxelShapes.cuboid(searchBox),
                             VoxelShapes.cuboid(Box.from(boundingBox)),
                             BooleanBiFunction.ONLY_FIRST
                         )
-                        logger.info("Voxel Shape: $voxelShape")
                         generate(
                             context.noiseConfig(),
                             maxSize,
