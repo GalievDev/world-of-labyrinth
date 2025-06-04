@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "down": "world-of-labyrinth:block/lava_trap_bottom",
+    "east": "world-of-labyrinth:block/lava_trap_side_1",
+    "north": "world-of-labyrinth:block/lava_trap_side_2",
+    "south": "world-of-labyrinth:block/lava_trap_side_1",
+    "up": "world-of-labyrinth:block/lava_trap_top",
+    "west": "world-of-labyrinth:block/lava_trap_side_2",
+    "particle": "world-of-labyrinth:block/lava_trap_side_1"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "world-of-labyrinth:block/lava_trap"
+    }
+  }
+}
